@@ -3,29 +3,55 @@
     <footer>
       <div class="round-top links" id="icon-links">
         <nav>
-          <!-- prettier-ignore -->
-          <a href="https://github.com/SRDMoss" target="_blank" rel="noopener noreferrer">
-            <div class="icon-wrapper">
-              <i class="fab fa-github"></i>
-            </div>
-          </a>
-          <!-- prettier-ignore -->
-          <a href="https://techhub.social/@Moss" target="_blank" rel="noopener noreferrer">
-            <div class="icon-wrapper">
-              <i class="fab fa-mastodon"></i>
-            </div>
-          </a>
-          <!-- prettier-ignore -->
-          <a href="https://www.instagram.com/srdmoss/" target="_blank" rel="noopener noreferrer">
-            <div class="icon-wrapper">
-              <i class="fab fa-instagram"></i>
-            </div>
-          </a>
-          <div class="icon-wrapper icon-toggles" @click="toggleDarkMode">
-            <i class="fas fa-moon"></i>
+          <div class="grouper">
+            <a href="https://github.com/SRDMoss" target="_blank" rel="noopener noreferrer">
+              <div class="icon-wrapper">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="tooltip">
+                <span class="tip-text">&nbsp;Github&nbsp;</span>
+              </div>
+            </a>
           </div>
-          <div class="icon-wrapper icon-toggles">
-            <i class="fas fa-adjust" @click="toggleContrast"></i>
+
+          <div class="grouper">
+            <a href="https://techhub.social/@Moss" target="_blank" rel="noopener noreferrer">
+              <div class="icon-wrapper">
+                <i class="fab fa-mastodon"></i>
+              </div>
+              <div class="tooltip">
+                <span class="tip-text">&nbsp;Mastodon&nbsp;</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="grouper">
+            <a href="https://www.instagram.com/srdmoss/" target="_blank" rel="noopener noreferrer">
+              <div class="icon-wrapper">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="tooltip">
+                <span class="tip-text">&nbsp;Instagram&nbsp;</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="grouper">
+            <div class="icon-wrapper icon-toggles" @click="toggleDarkMode">
+              <i class="fas fa-moon"></i>
+            </div>
+            <div class="tooltip">
+              <span class="tip-text">&nbsp;Dark Mode&nbsp;</span>
+            </div>
+          </div>
+
+          <div class="grouper">
+            <div class="icon-wrapper icon-toggles">
+              <i class="fas fa-adjust" @click="toggleContrast"></i>
+            </div>
+            <div class="tooltip">
+              <span class="tip-text">&nbsp;High Contrast&nbsp;</span>
+            </div>
           </div>
         </nav>
       </div>
@@ -63,6 +89,7 @@ export default {
   justify-content: center;
   margin-inline:.5rem;
   margin-block: .3rem;
+  position: relative;
 }
 
 .icon-wrapper i {
@@ -71,6 +98,34 @@ export default {
 
 .icon-toggles {
   color: var(--color07);
+}
+
+.grouper {
+  margin-inline: 1rem;
+  position: relative;
+}
+
+.tooltip {
+  /* visibility: hidden; */
+  display: none;
+  background-color: var(--color00);
+  color: var(--color13);
+  border: 1px solid var(--color13);
+  font-size: .75rem;
+
+  position: absolute; 
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.grouper:hover .tooltip {
+  display: block;
+  /* visibility: visible; */
+}
+
+.tip-text {
+  white-space: nowrap;
 }
 </style>
 

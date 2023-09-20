@@ -72,7 +72,8 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: block-start;
+    justify-content: center;
+    text-align: center;
   }
 
   .item-photo {
@@ -81,10 +82,12 @@ export default {
     border-radius: 50%;
     border: 2px solid var(--color00);
     box-shadow: .33rem 1rem 3rem var(--color13);
+    text-align: center;
   }
 
   .photo-caption {
     font-size: 1.5em;
+    text-align: center;
   }
   .item-text {
     flex: 1;
