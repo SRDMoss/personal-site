@@ -57,7 +57,7 @@ export default {
           title: "My Adding Machine",
           subtitle: '',
           description: '<p><a href="http://stephenmossis.cool/my-adding-machine/" target="_blank">Click Here!</a></p>' +
-            'A simple adding machine front-end application which allows the user to push calculator buttons to add two' +
+            'A simple adding machine front-end application which allows the user to push calculator buttons to add two ' +
             'whole numbers together.',
           bulletsTitle: "Technology:",
           bullets: [
