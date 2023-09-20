@@ -1,0 +1,223 @@
+/* global css imported in App.vue */
+:root {
+  font-size: 16px;
+  font-family: 'Ysabeau Office', sans-serif;
+
+  /* Basic Palette */
+  --color00: #000000;
+  --color01: #392A00;
+  --color02: #4F1B07;
+  --color03: #1A2F2C;
+  --color04: #CC8914;
+  --color05: #F6642F;
+  --color06: #50A59A;
+  --color07: #EEBE5E;
+  --color08: #FBB69D;
+  --color09: #9FD1CA;
+  --color10: #FBEBCA;
+  --color11: #FFE9DF;
+  --color12: #E0EFED;
+  --color13: #FFFFFF;
+}
+
+/* * {
+  border: 1px solid white;
+} */
+
+body {
+  transition: opacity 0.5s;
+  opacity: 0;
+  color: var(--color02);
+  font-weight: 600;
+}
+
+.dark {
+  --color00: #FFFFFF; 
+  --color01: #EEBE5E; 
+  --color02: #FBB69D; 
+  --color03: #9FD1CA;
+  --color04: #CC8914; 
+  --color05: #F6642F; 
+  --color06: #50A59A; 
+  --color07: #392A00; 
+  --color08: #4F1B07; 
+  --color09: #1A2F2C; 
+  --color10: #392A00; 
+  --color11: #4F1B07; 
+  --color12: #1A2F2C;  
+  --color13: #000000;
+}
+
+.high-contrast {
+  font-weight: 800;
+  --color00: #000000;
+  --color01: #392A00;
+  --color02: #000000;
+  --color03: #1A2F2C;
+  --color04: #392A00;
+  --color05: #4F1B07;
+  --color06: #1A2F2C;
+  --color07: #FBEBCA;
+  --color08: #FFE9DF;
+  --color09: #E0EFED;
+  --color10: #FBEBCA;
+  --color11: #FFE9DF;
+  --color12: #E0EFED;
+  --color13: #FFFFFF;
+
+
+}
+
+.dark.high-contrast {
+  --color00: #FFFFFF; 
+  --color01: #FBEBCA; 
+  --color02: #FFE9DF; 
+  --color03: #E0EFED;
+  --color04: #FBEBCA; 
+  --color05: #FFE9DF; 
+  --color06: #E0EFED; 
+  --color07: #392A00; 
+  --color08: #4F1B07; 
+  --color09: #1A2F2C; 
+  --color10: #392A00; 
+  --color11: #4F1B07; 
+  --color12: #1A2F2C;  
+  --color13: #000000;
+}
+
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--color07);
+}
+
+a:visited {
+  color: var(--color08);
+}
+
+a:hover {
+  color: var(--color10);
+}
+
+a:active {
+  color: var(--color11);
+}
+
+/* global stuff */
+
+.title {
+  font-family: 'Cinzel Decorative', serif;
+  padding: 0.5rem;
+  color: var(--color02);
+  background-color: var(--color10);
+  background-image: url('@/assets/img/Background2-opacity-10.png');
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  background-color: var(--color02);
+  font-weight: 700;
+  font-size: 1.33rem;
+  color: var(--color10);
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cinzel Decorative', serif;
+}
+
+nav {
+  text-align: center;
+  display: flex;
+}
+
+/* utility */
+
+.round-top {
+  border-start-start-radius: 1rem;
+  border-start-end-radius: 1rem;
+}
+
+.round-bottom {
+  border-end-start-radius: 1rem;
+  border-end-end-radius: 1rem;
+}
+
+.caps {
+  font-size: 1.5em;
+}
+
+
+#copyright {
+  font-size: 1.5rem;
+}
+
+
+header>div,
+footer>div {
+  border:0.25rem solid var(--color02);
+  max-inline-size: 100%;
+}
+
+#header-container,
+#footer-container,
+#main-container {
+  display: flex;
+  justify-content: center;
+  inline-size: 100%;
+}
+
+header,
+footer {
+  inline-size: 80%;
+  max-inline-size: 800px;
+}
+
+@media (orientation: portrait) {
+  header, footer {
+    inline-size: 100%;
+  }
+
+  main {
+    inline-size: calc(100% - 2rem);
+  }
+}
+
+
+@media (max-width: 475px) {
+
+  #stephen-moss {
+    font-size: 2.5rem;
+  }
+
+ .links {
+    font-size: .75rem;
+  }
+
+ .icon-wrapper {
+    margin-inline: .25rem;
+  }
+}
+
+@media(max-width: 420px) {
+  #stephen-moss {
+    font-size: 2rem;
+  }
+}
