@@ -38,19 +38,21 @@
 
           <div class="grouper">
             <div class="icon-wrapper icon-toggles" @click="toggleDarkMode">
-              <i class="fas fa-moon"></i>
+              <i id="dark-icon" class="fas fa-moon"></i>
             </div>
             <div class="tooltip">
-              <span class="tip-text">&nbsp;Dark Mode&nbsp;</span>
+              <span id="dark-text" class="tip-text">&nbsp;Dark Mode&nbsp;</span>
+              <span id="light-text" class="tip-text invisible">&nbsp;Light Mode&nbsp;</span>
             </div>
           </div>
 
           <div class="grouper">
             <div class="icon-wrapper icon-toggles">
-              <i class="fas fa-adjust" @click="toggleContrast"></i>
+              <i id="contrast-icon" class="fas fa-adjust" @click="toggleContrast"></i>
             </div>
             <div class="tooltip">
-              <span class="tip-text">&nbsp;High Contrast&nbsp;</span>
+              <span id="high-contrast-text" class="tip-text">&nbsp;High Contrast&nbsp;</span>
+              <span id="default-contrast-text" class="tip-text invisible">&nbsp;Default Contrast&nbsp;</span>
             </div>
           </div>
         </nav>
@@ -69,11 +71,30 @@ export default {
   methods: {
     toggleContrast() {
       document.body.classList.toggle('high-contrast');
+      document.getElementById('contrast-icon').classList.toggle('fa-rotate-180');
+      document.getElementById('high-contrast-text').classList.toggle('invisible');
+      document.getElementById('default-contrast-text').classList.toggle('invisible');
     },
     toggleDarkMode() {
       document.body.classList.toggle('dark');
+      const el = document.getElementById('dark-icon')
+      el.classList.toggle('fa-moon');
+      el.classList.toggle('fa-sun'); 
+      document.getElementById('dark-text').classList.toggle('invisible');
+      document.getElementById('light-text').classList.toggle('invisible');
     }
   },
+  mounted() {
+    // if the user prefers Dark color scheme
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      this.toggleDarkMode();
+    }
+
+    // Check if the user prefers high contrast
+    if (window.matchMedia && window.matchMedia('(prefers-contrast: high)').matches) {
+      this.toggleContrast();
+    }
+  }
 };
 </script>
 
@@ -121,11 +142,16 @@ export default {
 
 .grouper:hover .tooltip {
   display: block;
-  /* visibility: visible; */
 }
 
 .tip-text {
   white-space: nowrap;
 }
+
+.invisible {
+  display: none !important;
+}
+
+
 </style>
 

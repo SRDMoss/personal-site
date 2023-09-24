@@ -18,8 +18,10 @@ export default {
     FooterComponent,
   },
   mounted() {
+    // Set 3 backgrounds to random colors from this list
     const colors = ['var(--color07)', 'var(--color08)', 'var(--color09)'];
 
+    // get color from array, remove color selected to avoid reuse
     function getRandomColor() {
       const randomIndex = Math.floor(Math.random() * colors.length);
       const selectedColor = colors[randomIndex];
@@ -27,17 +29,24 @@ export default {
       return selectedColor;
     }
 
+    // put color for body background
     document.body.style.backgroundColor = getRandomColor();
 
+    // get header and footer title containerse
     const backgrounds = document.querySelectorAll('.title');
+
+    // get color to apply to both
     const titleColor = getRandomColor(); 
 
+    // apply same color to both title blocks in header and footer
     backgrounds.forEach((background) => {
       background.style.backgroundColor = titleColor;
     })
 
+    // apply last color to main background
     document.querySelector('main').style.backgroundColor = getRandomColor(); 
-    
+
+    // display app
     document.body.style.opacity = "1";
 
   },  

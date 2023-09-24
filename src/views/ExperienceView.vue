@@ -27,9 +27,9 @@ export default {
           bulletsTitle: "Duties:",
           bullets: [
             'Linked non-traditional learners to school services and required resources', 
-            'Consistently achieved individual and team key performance indicators (KPI).', 
-            'Successfully assisted with internal auditing impacting state funding throughout the United States', 
-            'Served as subject-matter expert and provided training in form of shadowing new/temporary employees'
+            'Achieved individual and team key performance indicators (KPI).', 
+            'Assisted with internal auditing impacting state funding throughout the United States', 
+            'Served as subject-matter expert and provided training in the form of shadowing new/temporary employees'
             ]
         },
         {

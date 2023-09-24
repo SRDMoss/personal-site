@@ -24,9 +24,9 @@ export default {
             't=creditCopyText">Unsplash</a>',
           title: "Boston University, MS: Software Development",
           subtitle: 'MS: Software Development, Est December 2023',
-          description: "Acquire skills in algorithms, operating systems, computer language usage, " + 
-            "software development, and management of data, networks, or security. Capable of inves" + 
-            "tigating continually emerging new software technologies, and applications.",
+          description: "In this master's program, I acquired skills in algorithms, operating systems," +
+            "language usage, software development, and data management. Beyond coursework, I continua" +
+            "lly investigated emerging technologies and applications to stay ahead of software trends.",
           bulletsTitle: "Highlights:",
           bullets: ['Artificial Intelligence', 
             'Advanced Programming Techniques', 
@@ -40,13 +40,11 @@ export default {
           imageCaption: 'Photo by me, Stephen Moss.',
           title: "University of Maryland, College Park",
           subtitle: 'BA: Linguistics, BA: Psychology, May, 2015',
-          description: "My honors thesis allowed me to develop many skills undocumented elsewhere. " + 
-            "I utilized MS Excel and R to analyze and display data. I updated records and protected" + 
-            " PII in accordance with IRB agreements. I created, managed, texted and implemented sof" + 
-            "tware paradigms according to requirements developed in service of the experiment desig" + 
-            "ned to evaluate perceptin of palm orientation categories in ASL. Additionally I negoti" + 
-            "ated for documentation and space according to requirements set out by IRBs at Universi" + 
-            "ty of Maryland and Gallaudet University. ",
+          description: "My honors thesis offered a specialized skill set that complemented my formal" +
+            "education. I used MS Excel and R for data analysis, ensured the protection of PII under" +
+            " IRB agreements, and managed all aspects of software development for an experiment on A" +
+            "SL perception. This work was conducted in compliance with IRBs at both the University o" +
+            "f Maryland and Gallaudet University.",
           bulletsTitle: "Highlights:",
           bullets: [
             "Statistics", 
