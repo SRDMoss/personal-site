@@ -15,6 +15,17 @@
           </div>
 
           <div class="grouper">
+            <a href="https://www.linkedin.com/in/thisisstephenmoss/" target="_blank" rel="noopener noreferrer">
+              <div class="icon-wrapper">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="tooltip">
+                <span class="tip-text">&nbsp;LinkedIn&nbsp;</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="grouper">
             <a href="https://techhub.social/@Moss" target="_blank" rel="noopener noreferrer">
               <div class="icon-wrapper">
                 <i class="fab fa-mastodon"></i>
@@ -122,7 +133,7 @@ export default {
 }
 
 .grouper {
-  margin-inline: 1rem;
+  margin-inline: .1rem;
   position: relative;
 }
 
