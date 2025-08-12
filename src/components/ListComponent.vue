@@ -4,13 +4,13 @@
 
       <div class="photo-block" v-if="item.linkAddress">
         <a :href="item.linkAddress" target="_blank">
-          <img class="item-photo" :src="item.image" alt="List Image" /> 
+          <img class="item-photo" :src="item.image" :alt="`An image from ${ item.title }`" /> 
           <div v-html="item.imageCaption" class="photo-caption"></div>
         </a>  
       </div>  
 
       <div class="photo-block" v-else>
-        <img class="item-photo" :src="item.image" alt="List Image" /> 
+        <img class="item-photo" :src="item.image" :alt="`An image from ${ item.title }`" /> 
         <div v-html="item.imageCaption" class="photo-caption"></div>       
       </div>  
         

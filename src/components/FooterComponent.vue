@@ -48,7 +48,7 @@
           </div>
 
           <div class="grouper">
-            <div class="icon-wrapper icon-toggles" @click="toggleDarkMode">
+            <div class="icon-wrapper icon-toggles" @click="toggleDarkMode" tabindex="0">
               <i id="dark-icon" class="fas fa-moon"></i>
             </div>
             <div class="tooltip">
@@ -58,8 +58,8 @@
           </div>
 
           <div class="grouper">
-            <div class="icon-wrapper icon-toggles">
-              <i id="contrast-icon" class="fas fa-adjust" @click="toggleContrast"></i>
+            <div class="icon-wrapper icon-toggles" @click="toggleContrast" tabindex="0">
+              <i id="contrast-icon" class="fas fa-adjust" ></i>
             </div>
             <div class="tooltip">
               <span id="high-contrast-text" class="tip-text">&nbsp;High Contrast&nbsp;</span>
@@ -70,7 +70,7 @@
       </div>
 
       <div class="round-bottom title" id="copyright">
-        &copy; 2023 - Stephen Moss
+        &copy; 2023-2024 - Stephen Moss
       </div>
     </footer>
   </div>
