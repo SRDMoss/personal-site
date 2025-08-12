@@ -16,7 +16,7 @@ export default {
     return {
       items: [
         {
-          id: 6,
+          id: 5,
           image: '/assets/img/portfolio/jrmatch.jpg',
           imageCaption: 'See the Repo!',
           title: "JR Match (Job Description and Resume Matcher)",
@@ -34,27 +34,6 @@ export default {
             'SQL',
           ],
           linkAddress: 'http://github.com/SRDMoss/jr-match/',
-        },
-        {
-          id: 5,
-          image: '/assets/img/portfolio/apptrack.jpg',
-          imageCaption: 'See it now!',
-          title: "Job Application Tracker",
-          description: "An application where a job seeker can easily keep record of Companies, Postings, " +
-            "Applications, and Communications all in one place! I'm using it myself, and you can too.",
-          bulletsTitle: "Technology:",
-          bullets: [
-            'HTML', 
-            'CSS', 
-            'JavaScript',
-            'Python',
-            'Django',
-            'MySQL',
-            'Apache',
-            'Ubuntu',
-            'AWS EC2',
-            ],
-          linkAddress: 'http://stephenmossis.cool/apptrack/',
         },
         {
           id: 4,
