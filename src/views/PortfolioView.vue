@@ -19,7 +19,8 @@ export default {
           id: 5,
           image: '/assets/img/portfolio/jrmatch.jpg',
           imageCaption: 'See the Repo!',
-          title: "JR Match (Job Description and Resume Matcher)",
+          title: "JR Match",
+          subtitle: "Job Description and Resume Matcher",
           description: "An NLP-powered application that parses resumes and job descriptions, extracts " + 
             "and normalizes skills, and uses semantic search to match candidates to roles with explainable results.",
           bulletsTitle: "Technology:",
