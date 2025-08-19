@@ -26,28 +26,6 @@
           </div>
 
           <div class="grouper">
-            <a href="https://techhub.social/@Moss" target="_blank" rel="noopener noreferrer">
-              <div class="icon-wrapper">
-                <i class="fab fa-mastodon"></i>
-              </div>
-              <div class="tooltip">
-                <span class="tip-text">&nbsp;Mastodon&nbsp;</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="grouper">
-            <a href="https://www.instagram.com/srdmoss/" target="_blank" rel="noopener noreferrer">
-              <div class="icon-wrapper">
-                <i class="fab fa-instagram"></i>
-              </div>
-              <div class="tooltip">
-                <span class="tip-text">&nbsp;Instagram&nbsp;</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="grouper">
             <div class="icon-wrapper icon-toggles" @click="toggleDarkMode" tabindex="0">
               <i id="dark-icon" class="fas fa-moon"></i>
             </div>
